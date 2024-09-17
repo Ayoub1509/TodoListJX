@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="appli.todolistjx.accueil.LoginController">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="484.0" prefWidth="246.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Salutations!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="53.0" prefWidth="195.0" text="Bienvenue ! ">
+      <font>
+         <Font size="36.0" />
+      </font></Label>
+   <Label prefHeight="27.0" prefWidth="105.0" text="Votre Email :">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="postmail" prefHeight="25.0" prefWidth="179.0" />
+   <Label prefHeight="27.0" prefWidth="194.0" text="Votre Mot De Passe : ">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="postmdp" />
+   <Button onAction="#Inscription" prefHeight="24.0" prefWidth="78.0" text="Inscription" />
+    <Button onAction="#Connexion" prefHeight="24.0" prefWidth="78.0" text="Connexion" />
+   <Button onAction="#Mdp" prefHeight="25.0" prefWidth="152.0" text="Mot de Passe Oublie" />
 </VBox>

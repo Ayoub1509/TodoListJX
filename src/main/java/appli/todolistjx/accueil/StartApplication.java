@@ -1,4 +1,4 @@
-package appli.todolistjx;
+package appli.todolistjx.accueil;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,6 +15,7 @@ public class StartApplication extends Application {
         stage.setTitle("Salutations!");
         stage.setScene(scene);
         stage.show();
+        System.out.println();
     }
 
     public static void main(String[] args) {
