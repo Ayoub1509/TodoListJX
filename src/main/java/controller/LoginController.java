@@ -1,33 +1,27 @@
 package controller;
 
+import appli.todolistjx.accueil.StartApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-
-import java.io.IOException;
+import javafx.scene.control.Button;
 
 public class LoginController {
     @FXML
-    private Label welcomeText;
+    private Button Connexion;
 
     @FXML
-    private TextField postmail;
-    @FXML
-    private TextField postmdp;
-
-
-    @FXML
-    protected void Inscription() {
+    protected void Inscription(ActionEvent event) {
+        StartApplication.changeScene("inscription.fxml","inscription");
 
 
     }
     @FXML
     protected void Connexion() {
-
+        System.out.println("Connexion");
     }
     @FXML
     protected void Mdp() {
+        System.out.println("Mot de passe oublie");
 
     }
 
