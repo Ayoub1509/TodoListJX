@@ -1,19 +1,19 @@
 package controller;
 
-import appli.todolistjx.accueil.StartApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+
+import java.io.IOException;
 
 public class LoginController {
     @FXML
     private Button Connexion;
 
     @FXML
-    protected void Inscription(ActionEvent event) {
-        StartApplication.changeScene("inscription.fxml","inscription");
-
-
+    protected void Inscription (ActionEvent event) throws IOException {
+        SceneController sc = new SceneController();
+        sc.changeScene("/appli/todolistjx/inscription.fxml", event);
     }
     @FXML
     protected void Connexion() {
@@ -21,6 +21,7 @@ public class LoginController {
     }
     @FXML
     protected void Mdp() {
+
         System.out.println("Mot de passe oublie");
 
     }

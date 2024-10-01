@@ -11,9 +11,8 @@ module appli.todolistjx {
     requires java.sql;
 
     opens appli.todolistjx to javafx.fxml;
-    exports appli.todolistjx;
-    exports appli.todolistjx.accueil;
-    opens appli.todolistjx.accueil to javafx.fxml;
+    exports accueil;
+    opens accueil to javafx.fxml;
     exports controller;
     opens controller to javafx.fxml;
 }
