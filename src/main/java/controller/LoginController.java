@@ -14,6 +14,8 @@ public class LoginController {
     protected void Inscription (ActionEvent event) throws IOException {
         SceneController sc = new SceneController();
         sc.changeScene("/appli/todolistjx/inscription.fxml", event);
+
+
     }
     @FXML
     protected void Connexion() {
